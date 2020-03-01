@@ -1,6 +1,7 @@
 from keras.utils import plot_model
 from IPython.display import Image
 import random
+import math
 import string
 import os
 
@@ -11,3 +12,10 @@ def show_keras_model(model):
     image = Image(filename)
     os.remove(filename)
     return image
+
+# sigmoid
+def sigmoid(x):
+    return 1.0 / (1 + math.exp(-x))
+
+def tanh(x):
+    return math.tanh(x)
