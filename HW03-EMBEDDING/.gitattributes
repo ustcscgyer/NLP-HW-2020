@@ -1,0 +1,2 @@
+glove_6B_100d_top100k.csv filter=lfs diff=lfs merge=lfs -text
+plot_summaries_tokenized.txt filter=lfs diff=lfs merge=lfs -text
